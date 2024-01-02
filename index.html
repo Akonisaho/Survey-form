@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Software engineers survey form </title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+	<h1 id="title">Software engineers survey form</h1>
+  <p id="description">Thank you for your response</p>
+
+  <form id=survey-form>
+    <div class="input-info">
+      <div>
+        <label id="name-label">Name<input id ="name" type="text" placeholder="Enter your name" required></label>
+        </div>
+      <div>
+        <label id="email-label">Email<input id ="email" type="email" placeholder="Enter your email" required></label>
+        </div>
+      <div>
+        <label id="number-label">Age(optional)<input type="number" min="24" max="55" id= "number"placeholder="Age"</label>
+        </div>
+        </div>
+
+        <div class="input-info">
+          <label for="dropdown">Where do you prefer working from?</label>
+          <select id="dropdown" name="dropdown" >
+            <option value="select your preference">select your preference</option>
+            <option value="home">home</option>
+            <option value="office">office</option>
+            <option value="other">other</option>
+          </select>
+          </div>
+
+          <div class="input-info">
+            <label>Does Software Engineering interest you?</label>
+            <div>
+              <label ><input type ="radio"  name="option" value="option-1" checked/>Definitly</label>
+              </div>
+            <div>
+              <label><input type ="radio" name="option" value="option-2"  />Sometimes</label>
+              </div>
+          <div>
+            <label><input type ="radio" name="option" value="option-3"/>No</label>
+            </div>
+          </div>
+
+          <div class="input-info">
+            <div>
+              <label>How do you improve skills(check all that apply)</label>
+              </div>
+           <div> 
+             <label for="opt-1"><input type ="checkbox" value="course"/>Attend train courses</label>
+             </div>
+            <div><label for="opt-2"><input type ="checkbox" value="skills"/>Strengthen your problem-solving skils</label>
+            </div>
+            <div>
+              <label for="opt-3"><input type ="checkbox" value="communication"/>Communicate with team</label>
+            </div>
+            <div>
+              <label for="opt-4"><input type ="checkbox" value="mentor"/>Find a Mentor</label>
+              </div>
+            <div>
+              <label for="opt-5"><input type ="checkbox" value="goals"/>Set weekly goals</label>
+              </div>
+            <div>
+              <label for="opt-6"><input type ="checkbox" value="read"/>Read more about coding</label>
+              </div>
+            <div>
+              <label for="opt-7"><input type ="checkbox" value="none"/>None of the above</label>
+              </div>
+            </div>
+
+            <div class="input-info">
+              <div>
+                <label for="comment">What do you like about software Engineering</label>
+                </div>
+                <textarea name ="comment" id="comment" placeholder="Enter your coment here..."></textarea>
+                </div>
+
+                <button id="submit" value="submit">submit</button>
+
+    </form>
+  </body>
+</html>
